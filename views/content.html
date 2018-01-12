@@ -1,0 +1,28 @@
+<script>
+	function test() {
+	var data;	
+	var http = new XMLHttpRequest();
+	var url = "/api/book/list";
+	http.open("POST", url, true);
+
+	//Send the proper header information along with the request
+	http.setRequestHeader("Content-type", "application/json");
+
+	http.onreadystatechange = function() {//Call a function when the state changes.
+	    if(http.readyState == 4 && (http.status == 200 || http.status == 403 ) ) {
+	        console.log(http.responseText);
+	        document.getElementById('smname').value = http.responseText
+	    }
+
+	    console.log(http.readyState, http.status);
+	}
+	http.send();
+}
+test();
+</script>>
+
+<h2>列表内容:</h2>
+<textarea  name="smname" id="smname" style="width:800px;height:400px;">
+	
+
+</textarea>

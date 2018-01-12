@@ -6,7 +6,6 @@ curl -X POST http://localhost:3000/api/user/login \
 -H 'Content-Type: application/json' \
 -d '{"username":"zwn","password":"123456"}' \
 -v
-
 ```
 反斜线（ \ ）代表指令未完，下一行继续。
 
@@ -23,8 +22,10 @@ curl -X POST http://localhost:3000/api/user/login \
 
 用 Curl 进行 POST 的测试：
 ```
-curl -X POST http://localhost:3000/api/book/list -H 'Content-Type: application/json' --cookie "test=s%3ADcIpHmNAExQKl8SYAjjyB1tQeP2-R0OQ.EiFx2UbnXgvxQbTHhIazQbApZSF4b7uLSVctTEPcxx0; Path=/; Expires=Fri, 26 Jan 2018 20:31:06 GMT; HttpOnly" -v
-
+curl -X POST http://localhost:3000/api/book/list \
+ -H 'Content-Type: application/json' \ 
+ --cookie "test=s%3ADcIpHmNAExQKl8SYAjjyB1tQeP2-R0OQ.EiFx2UbnXgvxQbTHhIazQbApZSF4b7uLSVctTEPcxx0; Path=/; Expires=Fri, 26 Jan 2018 20:31:06 GMT; HttpOnly" \
+ -v
 ```
 
 图示:

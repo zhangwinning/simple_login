@@ -1,6 +1,7 @@
 ## passprot
 
 passport的作用主要是两个:
+
 1、实现用户登录验证逻辑。
 
 2、调用`passport.serializeUser`，把session信息保存到数据库中。

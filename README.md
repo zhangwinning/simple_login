@@ -29,3 +29,5 @@
 2、npm install	//安装依赖
 
 3、npm start 	//启动项目
+
+感觉不错，star一下，谢谢啦。

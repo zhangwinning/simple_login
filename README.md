@@ -22,7 +22,7 @@
 
 [Authorization](https://github.com/WenNingZhang/simple_login/blob/master/md/Authorization.md)
 
-注:
+运行部署:
 
 1、数据库用户名、密码、数据库名都是`test`,因此clone下来后要先建立一个数据库，或者修改连接数据库。
 

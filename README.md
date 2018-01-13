@@ -30,4 +30,4 @@
 
 3、npm start 	//启动项目
 
-感觉不错，star一下，谢谢啦。
+感觉不错，star一下，谢谢啦 :pray: :pray: :pray:

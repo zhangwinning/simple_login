@@ -1,4 +1,4 @@
-node-express实现登录验证和授权
+## node-express实现登录验证和授权
 
 账号登录验证和权限设置，可以说是任何一个系统都必须具备的基本功能，而方式是从最传统的账号密码登录，到社交账号绑定不等。
 
@@ -10,7 +10,7 @@ node-express实现登录验证和授权
 
 另外的目的是为了不让其他人冒充你。概括为:确保真的是你。
 
-以上两个目的的实现需要两个中间件处理
+以上两个目的的实现需要两个中间件处理。
 
 [会话(session) ---> 记得之前的你](https://github.com/WenNingZhang/simple_login/blob/master/md/session.md)
 

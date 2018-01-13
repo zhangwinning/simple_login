@@ -1,5 +1,13 @@
 ## session
 
+session实现分为三部分
+
+1、server端生成cookie
+
+2、client保存cookie
+
+3、sessions存储
+
 ### server端生成cookie
 当登陆成功后，服务器端通常会生成并维护一个会话，同时为这个会话绑定一个ID(Sessioin ID)，然后把这个ID通过response对象的`set-cookie`属性保留在访问服务器的客户端。
 
@@ -46,5 +54,4 @@ detail sessions（in index.js）
 把session数据保存到mongodb数据库中,其中先new一个存储集合，集合名称是`sessions`,然后通过`session`中间件的store设置保存到数据库中，`secret`是生成cookie的秘钥，`name`为保存到客户端的cookie属性名。
 
 
-session数据是如何存储的，看`passport.md`
-
+session数据是如何存储的，看[passport.md](https://github.com/WenNingZhang/simple_login/blob/master/md/passport.md)

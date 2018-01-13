@@ -8,7 +8,7 @@ passport的作用主要是两个:
 
 ### 实现用户登录逻辑
 
-1、定义策略
+#### 定义策略
 
 ![lib/passport.js](../pictures/passport1.png)
 
@@ -27,17 +27,17 @@ passport的作用主要是两个:
 在`app.use(bodyParser.urlencoded({ extended: false }))`解析后，也会把解析的值添加到`req.body`。
 
 
-2、策略初始化，加入到应用中
+#### 策略初始化，加入到应用中
 
 ![index.js](../pictures/passport2.png)
 
-3、根据登录api，路由到相应的策略进行调用
+#### 根据登录api，路由到相应的策略进行调用
 
 ![api.js](../pictures/passport3.png)
 
 ### `passport.serializeUser` 和 `passport.deserializeUser`
 
-for serializeUser
+#### for serializeUser
 
 1、当一个用户提交`登录`表单,根据路由调用到`passport.authenticate`中间件,因为中间件是一个函数，因此需要设置函数自执行。
 
@@ -55,7 +55,8 @@ for serializeUser
 
 8、在`req.login`中自动调用`passport.serializeUser`序列化用户保存到`mongodb`数据库中，同时可以选择保存整个对象还是用户Id，这里保存的是用户Id。
 
-for deserializeUser
+#### for deserializeUser
+
 1、passport.initialize中间件对于每次请求都会触发,目的是确定session包含一个`passport.user`对象，尽管可能是空的。
 
 2、如果序列化的用户在服务器端的数据库存在，`passport.session`中间件可以把数据库中的user这个对象获取赋值给`req.user`。而`passport.session`也会在每次请求时触发。

@@ -63,6 +63,10 @@ passport的作用主要是两个:
 
 3、`passport.deserializeUser`这个函数由`passport.session`触发。在每次请求中可以加载`user`信息，然后把`user`对象`attach`到req.user。
 
+注:
+1、`Local Strategy`仅仅被在特定路由上使用`passport.authenticate `被触发。
+
+2、而仅仅`passport.serializeUser`函数被执行后,用户信息才会被存储到`sessions`中。
 
 
 

@@ -14,13 +14,9 @@ passport的作用主要是两个:
 
 定义`local`策略，其中`username`和`password`是通过`app.use(bodyParser.json())`和
 
-`app.use(bodyParser.urlencoded({ extended: false }))` 这个两个中间件解析到`req.body`上,
+`app.use(bodyParser.urlencoded({ extended: false }))` 这个两个中间件解析到`req.body`上,而passport会直接从`req.body`上获取参数。
 
-而passport会直接从`req.body`上获取参数。
-
-当请求头中属性`contentType:application/json`,在`app.use(bodyParser.json())`解析后，
-
-请求参数会添加到`req.body`。
+当请求头中属性`contentType:application/json`，在`app.use(bodyParser.json())`解析后，请求参数会添加到`req.body`。
 
 当请求头中属性为`Content-Type: application/x-www-form-urlencoded`,
 

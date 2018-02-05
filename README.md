@@ -1,5 +1,5 @@
 
-![lib/passport.js](../pictures/all.png)
+![lib/passport.js](./pictures/all.png)
 
 ## node-express | 实现登录验证和授权
 

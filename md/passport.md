@@ -24,7 +24,6 @@ passport的作用主要是两个:
 
 
 #### 策略初始化，加入到应用中
-
 ![index.js](../pictures/passport2.png)
 
 #### 根据登录api，路由到相应的策略进行调用
